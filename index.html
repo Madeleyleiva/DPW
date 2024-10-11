@@ -106,19 +106,28 @@
                     <a href="dart/ejercicio09.dart">Ver ejercicio09</a>
         </div>
     </div>
-    <div class="semana" onclick="mostrarSubmenu('semana6-2')">
-        <h3>Semana 6-2</h3>
+
+  <div class="semana" onclick="mostrarSubmenu('semana6 - 2')">
+        <h3>Semana 6</h3>
         <div id="semana6" class="submenu" style="display: none;">
             <p>Estimado Alumno:  
-                La actividad consiste en implementar las aplicaciones y luego crear un portafolio con cada uno de los proyectos formularios. 
+             actividad . 
                     </p>
                     <a href="dart/trabajo1.dart">Ver trabajo1</a><br>
                     <a href="dart/trabajo2.dart">Ver trabajo2</a><br>
-                    <a href="dart/trabajo3.dart">Ver trabajo3</a><br>
+                    <a href="dart/trabajo3.dart">Ver trabajo3/a><br>
                     <a href="dart/trabajo4.dart">Ver trabajo4</a>
         </div>
     </div>
+
     <div class="semana" onclick="mostrarSubmenu('semana7')">
+        <h3>Semana 7</h3>
+        <div id="semana7" class="submenu" style="display: none;">
+            <a href="semana7.html">Ir a la página de la Semana 7</a>
+        </div>
+    </div>
+    
+    <div class="semana" onclick="mostrarSubmenu('semana8')">
         <h3>Semana 8</h3>
         <div id="semana8" class="submenu" style="display: none;">
             <a href="semana8.html">Ir a la página de la Semana 8</a>
@@ -128,6 +137,40 @@
 
         </section>
     </main>
+
+   
+
+    <script>
+        function mostrarContenido(seccion) {
+            const secciones = document.querySelectorAll('main > section');
+            secciones.forEach(sec => {
+                sec.style.display = 'none'; // Oculta todas las secciones
+            });
+
+            const seccionSeleccionada = document.getElementById(seccion);
+            seccionSeleccionada.style.display = 'block'; // Muestra la sección seleccionada
+
+            // Oculta todos los submenús
+            const submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(sub => {
+                sub.style.display = 'none';
+            });
+
+            // Muestra la imagen si es la sección de inicio
+            if (seccion === 'inicio') {
+                document.getElementById('imagenInicio').style.display = 'block'; // Muestra la imagen
+            } else {
+                document.getElementById('imagenInicio').style.display = 'none'; // Oculta la imagen
+            }
+        }
+
+        function mostrarSubmenu(semanaId) {
+            const submenuSeleccionado = document.getElementById(semanaId);
+            submenuSeleccionado.style.display = (submenuSeleccionado.style.display === 'block') ? 'none' : 'block'; // Alterna la visibilidad
+        }
+    </script>
+</body>
+</html>
 
    
 
