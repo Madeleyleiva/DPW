@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #1fcfcf;
+  background: #1a9690;
   color: white;
   padding: 20px;
   text-align: right;
@@ -52,7 +52,7 @@ p {
 }
 
 .semana {
-  background-color:#1fcfcf; /* Color de fondo */
+  background-color:#1a9690; /* Color de fondo */
   color: white;
   padding: 20px;
   margin: 10px 0; /* Espaciado vertical entre semanas */
@@ -138,10 +138,9 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Títulos */
 h1, h2 {
-    color: #131213; /* Verde */
+    color: #741674; 
 }
 
 /* Contenido de las semanas */
@@ -154,7 +153,7 @@ h1, h2 {
     background-color: #e7f3fe; /* Azul claro */
     margin: 10px 0;
     padding: 10px;
-    border-left: 5px solid #1fcfcf;/* Azul */
+    border-left: 5px solid #1a9690; /* Azul */
 }
 
 /* Imagen de bienvenida */
