@@ -106,7 +106,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #4CAF50; /* Verde */
+    background-color:  #f0b6f8; 
     color: white;
     padding: 10px 20px;
 }
@@ -125,7 +125,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #45a049; /* Color al pasar el ratón */
+    background-color: #f0b6f8; /* Color al pasar el ratón */
 }
 
 /* Secciones */
@@ -140,7 +140,7 @@ section {
 
 /* Títulos */
 h1, h2 {
-    color: #741674; 
+    color: #741674;
 }
 
 /* Contenido de las semanas */
@@ -162,3 +162,4 @@ h1, h2 {
     margin: 20px auto;
     border-radius: 5px;
 }
+
